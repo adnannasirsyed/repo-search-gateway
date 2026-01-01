@@ -1,14 +1,14 @@
 AWSTemplateFormatVersion: '2010-09-09'
-Transform: 'AWS::Serverless-2016-10-31'
+Transform: AWS::Serverless-2016-10-31
 Description: An AWS Serverless Specification template describing your function.
 Resources:
   searchgateway:
-    Type: 'AWS::Serverless::Function'
+    Type: AWS::Serverless::Function
     Properties:
       Handler: search_page.lambda_handler
       Runtime: python3.11
-      CodeUri: .
+      CodeUri: s3://artifacts-bucket-915028409560/fe76e8728c08104d4f40b75d6b77447d
       Description: ''
       MemorySize: 128
       Timeout: 300
-      Role: 'arn:aws:iam::844028273225:role/lambda_s3'
+      Role: arn:aws:iam::844028273225:role/lambda_s3
