@@ -7,8 +7,8 @@ Resources:
     Properties:
       Handler: search_page.lambda_handler
       Runtime: python3.11
-      CodeUri: s3://artifacts-bucket-915028409560/fe76e8728c08104d4f40b75d6b77447d
+      CodeUri: s3://artifacts-bucket-915028409560/6e6f548744b3e9676eb4dc51487aea5f
       Description: ''
       MemorySize: 128
       Timeout: 300
-      Role: arn:aws:iam::844028273225:role/lambda_s3
+      Role: arn:aws:iam::915028409560:role/LambdaSearchRole
